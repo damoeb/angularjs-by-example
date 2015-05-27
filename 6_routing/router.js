@@ -3,10 +3,13 @@ app
 $routeProvider
 	.when('/add', {
 		templateUrl: 'views/add.html',
-		controller: 'AddMovieController',
+		controller: 'AddController',
 	})
+    .when('/list', {
+        templateUrl: 'views/list.html',
+        controller: 'ListController',
+    })
 	.otherwise({
-		templateUrl: 'views/list.html',
-		controller: 'ListMovieController',
+        redirectTo: '/list'
 	})
 });
