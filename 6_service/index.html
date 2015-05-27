@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body ng-app="MovieApp">
+
+    <div ng-include="'views/add.html'"></div>
+    <div ng-include="'views/list.html'" ng-controller="ListController"></div>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="movie_service.js"></script>
+    <script type="text/javascript" src="movie_directive.js"></script>
+
+    <script type="text/javascript" src="controllers/add_controller.js"></script>
+    <script type="text/javascript" src="controllers/list_controller.js"></script>
+
+</body>
+</html>
