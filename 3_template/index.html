@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body ng-app="MovieApp">
+
+    <div ng-controller="ListController">
+        
+        <div ng-repeat="movie in movies track by $index | orderBy:'name'">
+            <div ng-include="'template_movie'"></div>
+        </div>
+
+    </div>
+
+    <script type="text/ng-template" id="template_movie">
+        {{movie.name}}, {{movie.year}}
+    </script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
