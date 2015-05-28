@@ -7,7 +7,7 @@
 
     <div ng-controller="ListController">
         
-        <div ng-repeat="movie in movies | orderBy:'name'">
+        <div ng-repeat="movie in movies">
             {{movie.name}}, {{movie.year}}
         </div>
 
@@ -18,3 +18,9 @@
 
 </body>
 </html>
+
+<!--
+
+ | orderBy:'name'
+
+-->
